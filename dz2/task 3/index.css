@@ -1,0 +1,26 @@
+*{
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+}
+span {
+    background-color: rgb(255, 183, 183);
+    display: flex; /* Используем flex вместо inline-flex */
+    align-items: flex-end; /* Прижимаем текст к нижнему краю */
+    justify-content: center; /* Центрируем по горизонтали внутри контейнера */
+    height: 33px;
+    width: fit-content; /* Ширина по содержимому */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    padding: 0 10px; /* Отступы по бокам */
+    font-size: 22px;
+}
+span sup {
+    align-self: flex-start; /* выравниваем по верхнему краю */
+    /* дополнительно, если нужно, можно уменьшитьть размер шрифта */
+    font-size: 0.7em;
+}
+dfn{
+    color: #a80000;
+    font-weight:600;
+}

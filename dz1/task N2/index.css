@@ -1,0 +1,16 @@
+html{
+    background-color: #eee;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.cards span{
+    background-color: #ddd;
+    font-size: 40px;
+    padding: 0 5px;
+}
+.red{
+    color: red;
+}
