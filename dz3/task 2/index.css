@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    margin: 8px;
+}
+ul{
+    margin-top: 2em;
+    padding: 0;
+}
+li{
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding-left: 2em;
+}
+li::marker{
+    color: transparent;
+}
+li input{
+    width: 1.5em;
+    height: 1.5em;
+}
+.checked_task{
+    background-color: #ddd;
+}
+.non_checked_task_1{
+    background-color: #c8ecf8;
+}
+.non_checked_task_2{
+    background-color: #add8e6;
+}

@@ -1,0 +1,12 @@
+*{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.gray_text{
+    color: #c4c4c4;
+}
+.bold_text{
+    font-weight: 700;
+}
