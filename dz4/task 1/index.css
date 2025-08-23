@@ -1,0 +1,18 @@
+ul{
+    display: flex;
+    flex-direction: column;
+}
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+#_1 li::before{
+    content: ""; /* Обязательное свойство, даже если пустое */
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url("./assets/snow.png");
+    background-size: cover; /* или contain, в зависимости от needs */
+    background-repeat: no-repeat;    
+}
