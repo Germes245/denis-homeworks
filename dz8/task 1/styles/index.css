@@ -1,8 +1,13 @@
 *{
-    border: 1px solid red;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
-html, body{
+/*html, body{
     border: 0;
+}*/
+:root{
+    --border-radius: 5px;
 }
 body{
     margin: 16px;
@@ -14,15 +19,69 @@ td{
     width: 130px;
     height: 30px;
 }
+.cell_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.cell_content-down_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.cell_content-down_part-up_span{
+    font-size: 30px;
+}
+thead{
+    color: #fff;
+    font-weight: 600;
+}
+thead .cell_content{
+    justify-content: space-between;
+}
+thead tr td:first-child .cell_content{
+    justify-content: center
+}
 thead td{
     height: 120px;
 }
+thead td:first-child{
+    border-top-left-radius: var(--border-radius);
+}
+thead td:last-child{
+    border-top-right-radius: var(--border-radius);
+}
+tbody{
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+tbody tr:last-child{
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: var(--border-radius);
+}
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: var(--border-radius);
+}
 td:first-child{
-    width: 180px;
+    width: 200px;
 }
 tbody tr:nth-child(2n+1){
     background-color: #00000010;
 }
 tbody tr td:nth-child(2n+1){
     background-color: #00000010;
+}
+tbody .cell_content{
+    padding: auto;
+}
+tbody tr td:first-child .cell_content{
+    padding-left: 30px;
 }
