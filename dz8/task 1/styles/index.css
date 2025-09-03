@@ -1,0 +1,28 @@
+*{
+    border: 1px solid red;
+}
+html, body{
+    border: 0;
+}
+body{
+    margin: 16px;
+}
+table{
+    border-collapse: collapse;
+}
+td{
+    width: 130px;
+    height: 30px;
+}
+thead td{
+    height: 120px;
+}
+td:first-child{
+    width: 180px;
+}
+tbody tr:nth-child(2n+1){
+    background-color: #00000010;
+}
+tbody tr td:nth-child(2n+1){
+    background-color: #00000010;
+}

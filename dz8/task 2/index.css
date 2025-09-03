@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    background-color: black;
+    gap: 1px;
+    margin: 20px;
+}
+header span{
+    width: 200px;
+    background-color: green;
+    text-align: center;
+    padding: 10px 0;
+}
+#babba{
+    background-color: #ddd;
+    height: 300vh;
+}
