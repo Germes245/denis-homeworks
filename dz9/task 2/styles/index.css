@@ -1,0 +1,104 @@
+:root{
+    --height-of-button: 70px;
+    --color-of-buttons-and-gaps: rgb(94, 48, 48);
+}
+/**{
+    border: 1px solid red;
+}*/
+button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(129, 66, 66);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+label{
+    position: relative;
+    width: 70px;
+    height: 53px;
+    padding: 15px;
+}
+#label_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.line_in_menu{
+    height: 4px;
+    background-color: white;
+    transition: .2s;
+}
+#input{
+    display: none;
+}
+#input:checked ~ label .line_in_menu{
+    opacity: 0;
+    transition: .2s;
+}
+#input:checked ~ label .line_in_menu:first-child{
+    transform: translateY(9px) rotate(45deg);
+    opacity: 1;
+    background-color: white;
+    transition: .2s;
+}
+#input:checked ~ label .line_in_menu:last-child{
+    transform: translateY(-9px) rotate(-45deg);
+    opacity: 1;
+    background-color: white;
+    transition: .2s;
+}
+menu{
+    width: 210px;
+    position: absolute;
+    top: 70px;
+    left: -210px;
+    border-top: 1px solid var(--color-of-buttons-and-gaps);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1px;
+    background-color: var(--color-of-buttons-and-gaps);
+    transition: .2s;
+}
+#input:checked ~ menu{
+    left: 0;
+    transition: .2s;
+}
+menu button{
+    height: var(--height-of-button);
+    background-color: rgb(129, 66, 66);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+menu button:hover{
+    background-color: var(--color-of-buttons-and-gaps);
+}
+.img_in_button{
+    width: var(--height-of-button);
+    height: var(--height-of-button);
+    background-image: url('/assets/pencil.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+menu button p{
+    font-size: 14px;
+    color: white;
+}
